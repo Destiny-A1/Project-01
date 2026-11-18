@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0d">
+  <meta name="description" content="DN EDITZ — portfolio of Destiny Aigbefoh, creative visual storyteller, video editor, designer and web development learner.">
+  <title>DN EDITZ — Creative Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b0b0d;--panel:#141417;--panel2:#1b1b20;--text:#f4f1eb;--muted:#a6a3a0;--line:#2b2a2d;--accent:#d5ff3f;--orange:#ff754a;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}.mono,.eyebrow,.nav a,.tag,.project-no{font-family:"DM Mono",monospace}.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}.muted{color:var(--muted)}.topbar{position:sticky;top:0;z-index:20;background:#0b0b0deF;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff12}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:-.07em;font-size:24px}.brand span{color:var(--accent)}.navlinks{display:flex;gap:28px;align-items:center}.navlinks a{font-size:12px;color:#c9c6c1}.navlinks a:hover{color:var(--accent)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 18px;border-radius:3px;background:var(--accent);color:#10110b;font-size:12px;font-weight:800;transition:.2s}.nav-cta:hover,.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px #d5ff3f22}.menu{display:none;background:none;color:var(--text);border:1px solid var(--line);padding:8px 11px}
+    .hero{padding:105px 0 86px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:560px;height:560px;border:1px solid #d5ff3f18;border-radius:50%;right:-180px;top:30px;box-shadow:0 0 0 55px #d5ff3f08,0 0 0 110px #d5ff3f05;pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:55px;align-items:center;position:relative;z-index:1}.hero h1{font-size:clamp(48px,8vw,94px);line-height:.99;letter-spacing:-.085em;margin:20px 0 24px;max-width:760px}.hero h1 em{font-style:normal;color:var(--accent)}.hero-copy{max-width:590px;color:#b8b4ae;font-size:16px}.hero-actions{display:flex;gap:14px;align-items:center;margin-top:32px;flex-wrap:wrap}.btn-ghost{border:1px solid #4a4949;color:var(--text);padding:12px 18px;border-radius:3px;font-size:12px;font-weight:700}.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}.hero-art{min-height:390px;background:linear-gradient(145deg,#1e2020,#121315 65%);border:1px solid #ffffff17;border-radius:5px;position:relative;display:grid;place-items:center;overflow:hidden}.hero-art:before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:var(--accent);filter:blur(90px);opacity:.14}.art-ring{width:245px;height:245px;border:1px solid #d5ff3f8a;border-radius:50%;display:grid;place-items:center;transform:rotate(-18deg);box-shadow:0 0 80px #d5ff3f12}.art-ring:before,.art-ring:after{content:"";position:absolute;border:1px solid #ffffff35;border-radius:50%;width:185px;height:185px}.art-ring:after{width:125px;height:125px;border-color:#d5ff3f55}.art-mark{font-size:74px;font-weight:800;letter-spacing:-.12em;color:var(--accent);transform:rotate(18deg)}.art-caption{position:absolute;bottom:20px;left:22px;right:22px;display:flex;justify-content:space-between;font:10px "DM Mono",monospace;color:#aaa;letter-spacing:.12em;text-transform:uppercase}.scroll-note{margin-top:50px;font:10px "DM Mono",monospace;color:#777;letter-spacing:.13em}
+    .ticker{border-block:1px solid var(--line);padding:18px 0;overflow:hidden;color:#d8d5ce;font:11px "DM Mono",monospace;letter-spacing:.13em;text-transform:uppercase;white-space:nowrap}.ticker span{color:var(--accent);padding:0 22px}
+    section{padding:100px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}.section-head h2{font-size:clamp(34px,5vw,55px);line-height:1.05;letter-spacing:-.07em;margin:12px 0 0}.section-head p{max-width:390px;color:var(--muted);font-size:13px;margin:0}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.service{background:var(--panel);border:1px solid var(--line);padding:28px;min-height:220px;transition:.25s}.service:hover{border-color:#d5ff3f70;transform:translateY(-4px)}.service-icon{font-size:25px;color:var(--accent)}.service h3{font-size:19px;letter-spacing:-.04em;margin:26px 0 8px}.service p{font-size:12px;color:var(--muted);margin:0}.service .tag{font-size:9px;color:#777;margin-top:20px;display:block;letter-spacing:.1em}
+    .work{background:#101012}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project{border:1px solid var(--line);background:var(--panel);overflow:hidden}.project-visual{height:260px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}.project-visual.thermo{background:linear-gradient(135deg,#19252a,#35505a 55%,#101719)}.project-visual.dn{background:linear-gradient(135deg,#282118,#59432b 50%,#12100d)}.project-visual.adare{background:linear-gradient(135deg,#251b28,#5d3b55 55%,#160f18)}.project-visual.motion{background:linear-gradient(135deg,#171d27,#304d68 55%,#101319)}.visual-word{font-size:clamp(30px,5vw,58px);font-weight:800;letter-spacing:-.09em;text-align:center;line-height:1;color:#ffffffd9;text-shadow:0 8px 35px #0008}.visual-word small{display:block;font:10px "DM Mono",monospace;letter-spacing:.2em;margin-top:15px;color:var(--accent)}.project-no{position:absolute;top:18px;left:20px;font-size:10px;color:#ffffffa8}.project-body{padding:22px 24px 25px}.project-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.project h3{font-size:20px;letter-spacing:-.05em;margin:0}.status{font:9px "DM Mono",monospace;color:var(--accent);border:1px solid #d5ff3f50;padding:5px 8px;text-transform:uppercase}.project-body p{color:var(--muted);font-size:12px;margin:10px 0 18px}.project-tags{display:flex;gap:7px;flex-wrap:wrap}.tag{font-size:9px;color:#aaa;border:1px solid var(--line);padding:5px 8px}
+    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}.about-stamp{background:var(--accent);color:#111;min-height:320px;padding:28px;display:flex;flex-direction:column;justify-content:space-between}.about-stamp strong{font-size:clamp(48px,7vw,84px);letter-spacing:-.1em;line-height:.9}.about-stamp span{font:10px "DM Mono",monospace;letter-spacing:.14em}.about-copy h3{font-size:29px;line-height:1.2;letter-spacing:-.06em;margin:0 0 20px}.about-copy p{font-size:13px;color:var(--muted);margin:0 0 15px}.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:28px}.fact{border-top:1px solid var(--line);padding-top:13px}.fact strong{display:block;font-size:13px}.fact span{font-size:10px;color:var(--muted)}
+    .approach{background:var(--panel);border-block:1px solid var(--line)}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{border-top:1px solid #565550;padding-top:17px}.step b{font:11px "DM Mono",monospace;color:var(--accent)}.step h3{font-size:16px;margin:20px 0 7px}.step p{font-size:11px;color:var(--muted);margin:0}
+    .contact{padding:110px 0}.contact-panel{background:var(--accent);color:#10110b;padding:clamp(28px,6vw,70px);display:flex;justify-content:space-between;gap:35px;align-items:end}.contact-panel .eyebrow{color:#444d20}.contact-panel h2{font-size:clamp(42px,7vw,78px);line-height:.95;letter-spacing:-.085em;margin:18px 0 14px}.contact-panel p{font-size:13px;max-width:450px;color:#3d4328}.contact-link{display:inline-flex;white-space:nowrap;padding:15px 20px;border:1px solid #171a0d;color:#171a0d;font-size:12px;font-weight:800}.contact-link:hover{background:#171a0d;color:var(--accent)}
+    footer{border-top:1px solid var(--line);padding:25px 0;color:#777;font:10px "DM Mono",monospace}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-inner a{color:var(--accent)}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:800px){.hero-grid{grid-template-columns:1fr}.hero-art{min-height:300px}.hero{padding-top:75px}.services{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr;gap:35px}.about-stamp{min-height:220px}.steps{grid-template-columns:repeat(2,1fr)}.contact-panel{align-items:flex-start;flex-direction:column}.section-head{align-items:flex-start;flex-direction:column}}
+    @media(max-width:560px){.wrap{width:min(var(--max),calc(100% - 30px))}.nav{height:66px}.navlinks{display:none;position:absolute;top:66px;left:0;right:0;background:#111114;padding:22px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}.nav-cta{display:none}.hero h1{font-size:53px}.hero-art{min-height:260px}.services,.projects{grid-template-columns:1fr}.project-visual{height:220px}.steps{grid-template-columns:1fr 1fr}section{padding:75px 0}.facts{grid-template-columns:1fr 1fr}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="DN EDITZ home">DN<span>.</span></a>
+      <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+        <a href="#services">Services</a><a href="#work">Selected work</a><a href="#about">About</a><a href="#approach">Approach</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="#contact">LET'S TALK ↗</a>
+      <button class="menu" id="menu" aria-label="Toggle navigation" aria-expanded="false">MENU</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">Independent creative · Nigeria</div>
+            <h1>Ideas into<br><em>visual</em> impact.</h1>
+            <p class="hero-copy">I'm Destiny Aigbefoh — a video editor, visual creative and emerging web developer. I bring ideas to life through thoughtful editing, motion, design and digital experiences.</p>
+            <div class="hero-actions"><a class="btn" href="#work">EXPLORE MY WORK <span>↗</span></a><a class="btn-ghost" href="#about">MORE ABOUT ME</a></div>
+            <div class="scroll-note">SCROLL TO EXPLORE ↓</div>
+          </div>
+          <div class="hero-art" aria-label="DN EDITZ monogram artwork">
+            <div class="art-ring"><div class="art-mark">DN</div></div>
+            <div class="art-caption"><span>DN EDITZ</span><span>Creative portfolio / 2026</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="ticker">VIDEO EDITING <span>✳</span> MOTION DESIGN <span>✳</span> GRAPHIC DESIGN <span>✳</span> WEB DEVELOPMENT <span>✳</span> VISUAL STORYTELLING <span>✳</span></div>
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="eyebrow">01 / What I do</div><h2>Creative skills.<br>Practical solutions.</h2></div><p>I combine visual creativity with a growing technical skill set to help ideas communicate clearly and look memorable.</p></div>
+        <div class="services">
+          <article class="service reveal"><div class="service-icon">◉</div><h3>Video Editing</h3><p>Cinematic edits, social content, brand videos and polished storytelling built around rhythm and clarity.</p><span class="tag">CAPCUT · STORYTELLING</span></article>
+          <article class="service reveal"><div class="service-icon">✳</div><h3>Motion Graphics</h3><p>Animated brand elements, product-focused visuals and motion-led promotional content.</p><span class="tag">MOTION · ANIMATION</span></article>
+          <article class="service reveal"><div class="service-icon">▧</div><h3>Graphic & Photo Design</h3><p>Promotional graphics, visual layouts and photo-editing work that supports a consistent brand presence.</p><span class="tag">VISUAL DESIGN</span></article>
+          <article class="service reveal"><div class="service-icon">↗</div><h3>Web Development</h3><p>Learning and building responsive web experiences with a focus on structure, usability and clean presentation.</p><span class="tag">HTML · CSS · JAVASCRIPT</span></article>
+          <article class="service reveal"><div class="service-icon">✉</div><h3>Email Marketing</h3><p>Communication-focused email content and marketing support designed to connect brands with audiences.</p><span class="tag">EMAIL CONTENT</span></article>
+          <article class="service reveal"><div class="service-icon">▤</div><h3>Resume Design</h3><p>Clear, professional resume layouts that help people present their experience and skills with confidence.</p><span class="tag">DOCUMENT DESIGN</span></article>
+        </div>
+      </div>
+    </section>
+    <section class="work" id="work">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="eyebrow">02 / Selected projects</div><h2>Work in progress.<br>Ideas in motion.</h2></div><p>A selection of projects and creative directions I've explored. Some are ongoing learning projects; the descriptions are intentionally transparent.</p></div>
+        <div class="projects">
+          <article class="project reveal"><div class="project-visual thermo"><span class="project-no">PROJECT / 001</span><div class="visual-word">THERMOCOOL<small>PRODUCT MOTION CONCEPT</small></div></div><div class="project-body"><div class="project-top"><h3>Thermocool Product Motion</h3><span class="status">EDITED</span></div><p>A motion-design project exploring product presentation for home appliances, including refrigerators, washing machines and air conditioners.</p><div class="project-tags"><span class="tag">MOTION DESIGN</span><span class="tag">PRODUCT VISUALS</span></div></div></article>
+          <article class="project reveal"><div class="project-visual dn"><span class="project-no">PROJECT / 002</span><div class="visual-word">DN EDITZ<small>3D BRAND ANIMATION CONCEPT</small></div></div><div class="project-body"><div class="project-top"><h3>DN EDITZ Brand Concept</h3><span class="status">CONCEPT</span></div><p>A self-initiated creative direction for the DN EDITZ identity, exploring 3D product-style animation, sound design and cinematic presentation.</p><div class="project-tags"><span class="tag">BRANDING</span><span class="tag">CAPCUT</span><span class="tag">SOUND DESIGN</span></div></div></article>
+          <article class="project reveal"><div class="project-visual adare"><span class="project-no">PROJECT / 003</span><div class="visual-word">ADARE<small>RESTAURANT WEBSITE</small></div></div><div class="project-body"><div class="project-top"><h3>Adare Restaurants</h3><span class="status">LEARNING</span></div><p>A website-development learning project focused on building a restaurant web presence with HTML and CSS.</p><div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">WEB DESIGN</span></div></div></article>
+          <article class="project reveal"><div class="project-visual motion"><span class="project-no">PROJECT / 004</span><div class="visual-word">DIGITAL LAB<small>WEB & SOFTWARE EXPLORATION</small></div></div><div class="project-body"><div class="project-top"><h3>Student Developer Lab</h3><span class="status">EXPLORING</span></div><p>Academic and personal explorations in programming, data structures, desktop application concepts and practical problem-solving.</p><div class="project-tags"><span class="tag">COMPUTER SCIENCE</span><span class="tag">PROGRAMMING</span></div></div></article>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="wrap about-grid">
+        <div class="about-stamp reveal"><span>THE PERSON BEHIND THE WORK</span><strong>DESTINY<br>AIGBEFOH.</strong><span>CREATIVE MIND / CURIOUS BUILDER</span></div>
+        <div class="about-copy reveal"><div class="eyebrow">03 / A little about me</div><h3>Curious by nature. Creative by practice. Always learning.</h3><p>I'm Destiny Aigbefoh, a university student studying computer science and developing my skills across creativity and technology. My strongest creative focus is video editing, and I'm especially interested in visual storytelling — not just learning software, but understanding how images, movement, sound and ideas work together.</p><p>Alongside editing, I'm growing in motion graphics, graphic design and web development. I enjoy experimenting, building projects and turning what I learn into work I can share. My goal is to keep improving, build a strong portfolio and create meaningful value for clients and audiences.</p><div class="facts"><div class="fact"><strong>Visual storytelling</strong><span>Creative focus</span></div><div class="fact"><strong>Computer science</strong><span>Academic path</span></div><div class="fact"><strong>Always learning</strong><span>Growth mindset</span></div><div class="fact"><strong>DN EDITZ</strong><span>Creative brand</span></div></div></div>
+      </div>
+    </section>
+    <section class="approach" id="approach">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="eyebrow">04 / How I work</div><h2>From first thought<br>to final frame.</h2></div><p>Good creative work starts with understanding the idea, then making every visual decision serve its purpose.</p></div>
+        <div class="steps">
+          <div class="step reveal"><b>01 / UNDERSTAND</b><h3>Listen & explore</h3><p>Understand the brief, audience, message and intended outcome.</p></div>
+          <div class="step reveal"><b>02 / IMAGINE</b><h3>Shape the idea</h3><p>Develop a visual direction, references and a clear creative plan.</p></div>
+          <div class="step reveal"><b>03 / CREATE</b><h3>Make it real</h3><p>Edit, design, animate and refine with care and attention to detail.</p></div>
+          <div class="step reveal"><b>04 / REFINE</b><h3>Polish & deliver</h3><p>Review the result, make improvements and prepare the final work.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="contact-panel reveal"><div><div class="eyebrow">05 / Have a project in mind?</div><h2>Let's make<br>something matter.</h2><p>Have an idea that needs a visual voice? Explore my work and connect with me on GitHub. I'm always open to learning, collaboration and creative opportunities.</p></div><a class="contact-link" href="https://github.com/Destiny-A1" target="_blank" rel="noreferrer">CONNECT ON GITHUB ↗</a></div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-inner"><span>© <span id="year"></span> DN EDITZ · DESTINY AIGBEFOH</span><span>BUILT WITH CURIOSITY & CODE</span><a href="#home">BACK TO TOP ↑</a></div></footer>
+  <script>
+    const menu = document.getElementById('menu');
+    const nav = document.getElementById('navlinks');
+    menu.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      menu.setAttribute('aria-expanded', String(open));
+    });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menu.setAttribute('aria-expanded', 'false');
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold: 0.12});
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
